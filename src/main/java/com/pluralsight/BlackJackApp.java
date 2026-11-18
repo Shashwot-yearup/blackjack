@@ -30,6 +30,5 @@ public class BlackJackApp {
         //Creates hands
         Hand hand = new Hand();
         Hand hand2 = new Hand();
-
     }
 }
