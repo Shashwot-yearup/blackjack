@@ -37,5 +37,28 @@ public class BlackJackApp {
             hand2.deal(deck.deal());
         }
 
+        System.out.println("\n" + player1 + "'s hand: "
+                + hand.getValue());
+
+        System.out.println("\n" + player2 + "'s hand: "
+                + hand2.getValue());
+
+        int player1score = hand.getValue();
+        int player2score = hand2.getValue();
+
+        //If else to check who own.
+        if (player1score > 21 && player2score > 21) {
+            System.out.println("Both players went over 21. No winner!");
+        } else if (player1score > 21) {
+            System.out.println(player2 + " wins!");
+        } else if (player2score > 21) {
+            System.out.println(player1 + " wins!");
+        } else if (player1score > player2score) {
+            System.out.println(player1 + " wins!");
+        } else if (player2score > player1score) {
+            System.out.println(player2 + " wins!");
+        } else {
+            System.out.println("It's a tie!");
+        }
     }
 }

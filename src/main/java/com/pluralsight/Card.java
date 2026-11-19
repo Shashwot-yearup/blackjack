@@ -36,10 +36,12 @@ public class Card {
         // only return the value if the card is face up
         if (isFaceUp) {
             switch (this.value) {
-                case "A","J":
+                case "A":
                     return 11;
                 case "K":
                 case "Q":
+                case "j":
+                    return 11;
                 case "10":
                 case "9":
                 case "8":
