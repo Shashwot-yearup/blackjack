@@ -59,6 +59,9 @@ public class BlackJackApp {
             System.out.println(player2 + " wins!");
         } else {
             System.out.println("It's a tie!");
+
+
+
         }
     }
 }
