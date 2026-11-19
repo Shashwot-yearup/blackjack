@@ -30,5 +30,12 @@ public class BlackJackApp {
         //Creates hands
         Hand hand = new Hand();
         Hand hand2 = new Hand();
+
+        //forLoop to deal each player.
+        for (int i = 0; i < 2; i++) {
+            hand.deal(deck.deal());
+            hand2.deal(deck.deal());
+        }
+
     }
 }
